@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>eSketch</title>
+   <link rel="icon" href="img/icon.png">
+   <link rel="stylesheet" href="css/style.css">
+   <script defer src="js/script.js"></script>
+</head>
+
+<body>
+   <div class="container">
+      <h1 class="title">eSketch</h1>
+      <div class="mode">Мод: активный</div>
+      <div class="content">
+         <div class="board"></div>
+         <div class="buttons">
+            <button class="btn btn__black" onclick="changeColor('black')">Черный</button>
+            <button class="btn btn__white" onclick="changeColor('white')">Белый</button>
+            <button class="btn btn__gray" onclick="changeColor('gray')">Серый</button>
+            <button class="btn btn__random" onclick="changeColor('random')">Случайный</button>
+            <button class="btn btn__reset" onclick="resetBoard()">Сброс</button>
+         </div>
+         <div class="form">
+            <input class="input" type="text" placeholder="" value="16" onchange="changeSize(this.value)">
+            <button class="button">Задать размер</button>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
